@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather+Sans:wght@400;700&family=Merriweather:wght@400;700&display=swap");
 
+//Abstracts
 @import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
 
 //Base
 @import "base/base";
 @import "base/buttons";
+@import "base/logo";
+@import "base/normalize";
 
 //Layouts
 @import "layouts/wrapper";
@@ -12,5 +17,3 @@
 
 //Components
 @import "components/contact-me";
-
-
