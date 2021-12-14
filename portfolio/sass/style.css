@@ -3,6 +3,10 @@
   transition: all 0.3s ease-out;
 }
 
+h5, h3, h2, h1 {
+  font-family: Merriweather;
+}
+
 html {
   font-size: 10px;
 }
@@ -15,49 +19,62 @@ body {
 }
 
 h1 {
-  font-family: Merriweather;
+  font-size: 6rem;
   font-style: normal;
   font-weight: bold;
-  font-size: 60px;
-  line-height: 120px;
+  line-height: 12rem;
 }
 
 h2 {
-  font-family: Merriweather;
+  font-size: 4rem;
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
-  line-height: 80px;
+  line-height: 8rem;
   text-align: center;
   color: #BDAE82;
 }
 
 h3 {
-  font-family: Merriweather;
+  font-size: 2.8rem;
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
-  line-height: 56px;
+  line-height: 5.6rem;
   text-align: center;
+  margin-bottom: 0;
+  margin-top: 40px;
 }
 
 h4 {
-  font-family: Inter;
+  font-size: 2rem;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 40px;
+  line-height: 4rem;
   text-align: center;
 }
 
 h5 {
-  font-family: Merriweather;
+  font-size: 2.4rem;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 48px;
+  line-height: 4.8rem;
   text-align: center;
   color: #BDAE82;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.title__wrapper {
+  height: 2px;
+  width: 700px;
+  background-color: #BDAE82;
+  position: relative;
+  margin: 140px auto 60px;
+}
+
+.title__style {
+  position: absolute;
+  top: -75px;
+  right: 43%;
 }
 
 .lang__button {
@@ -115,7 +132,7 @@ h5 {
   width: 50px;
   height: 50px;
   background-color: #FFFFFF;
-  -webkit-mask-image: url("/alexa-dis-JSFEPRESCHOOL/portfolio/assets/svg/logo.svg");
+  -webkit-mask-image: url("/assets/svg/logo.svg");
   -webkit-mask-size: cover;
 }
 
@@ -512,8 +529,137 @@ a:hover {
   cursor: pointer;
 }
 
+.main__wrapper {
+  background-image: url(/assets/img/bg.jpg);
+  max-width: 1440px;
+  height: 910px;
+  margin: 0 auto;
+}
+
+.hero__content {
+  padding-top: 110px;
+  padding-bottom: 330px;
+  margin-left: 50px;
+}
+
+.hero__title {
+  margin: 0;
+  padding: 51px 0 10px;
+}
+
+.hero__description {
+  font-size: 2rem;
+  line-height: 4rem;
+  width: 470px;
+  margin: 0;
+  padding-bottom: 22px;
+}
+
+.skills__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.skill {
+  max-width: 320px;
+  text-align: center;
+}
+.skill p {
+  max-width: 280px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.icon-gold {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.skill__icon {
+  margin: 0 auto;
+}
+
+.icon__camera {
+  background-image: url(/assets/svg/camera.svg);
+  display: inline-block;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.icon__video {
+  background-image: url(/assets/svg/video.svg);
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+}
+
+.icon__photo {
+  background-image: url(/assets/svg/image.svg);
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+}
+
+.icon__mic {
+  background-image: url(/assets/svg/mic.svg);
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+}
+
+.portfolio__button__wrapper {
+  margin: 0 auto 60px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 895px;
+}
+
+.portfolio__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  justify-content: space-between;
+}
+
+.gallery__img {
+  padding-bottom: 25px;
+}
+
+.list__item {
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.price-items_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.price-item {
+  width: 450px;
+  height: 505px;
+  border: 2px solid #BDAE82;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-item__list {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .contact {
-  background-image: url("/alexa-dis-JSFEPRESCHOOL/portfolio/assets/img/contacts.jpg");
+  background-image: url("/assets/img/bg.jpg");
   background-repeat: no-repeat;
   margin: auto;
   max-width: 1440px;

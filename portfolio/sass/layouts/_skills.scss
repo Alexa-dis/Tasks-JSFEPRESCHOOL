@@ -1,0 +1,57 @@
+.skills__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.skill {
+  max-width: 320px;
+  text-align: center;
+  p {
+    max-width: 280px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+
+.icon-gold {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.skill__icon{
+    margin: 0 auto;
+}
+
+.icon__camera {
+  background-image: url(/assets/svg/camera.svg);
+  display:inline-block;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.icon__video {
+    background-image: url(/assets/svg/video.svg);
+    display:inline-block;
+    width: 65px;
+    height: 65px;
+    background-repeat: no-repeat;
+}
+
+.icon__photo {
+    background-image: url(/assets/svg/image.svg);
+    display:inline-block;
+    width: 65px;
+    height: 65px;
+    background-repeat: no-repeat;
+}
+
+.icon__mic {
+    background-image: url(/assets/svg/mic.svg);
+    display:inline-block;
+    width: 65px;
+    height: 65px;
+    background-repeat: no-repeat;
+}
