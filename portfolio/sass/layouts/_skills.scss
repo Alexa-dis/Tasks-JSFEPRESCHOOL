@@ -1,7 +1,8 @@
 .skills__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 25px;
+  
 }
 
 .skill {
@@ -19,10 +20,6 @@
   width: 65px;
   height: 65px;
   margin: 0 auto;
-}
-
-.skill__icon{
-    margin: 0 auto;
 }
 
 .icon__camera {

@@ -63,20 +63,6 @@ h5 {
   margin-bottom: 10px;
 }
 
-.title__wrapper {
-  height: 2px;
-  width: 700px;
-  background-color: #BDAE82;
-  position: relative;
-  margin: 140px auto 60px;
-}
-
-.title__style {
-  position: absolute;
-  top: -75px;
-  right: 43%;
-}
-
 .lang__button {
   background-color: transparent;
   border-style: none;
@@ -85,6 +71,7 @@ h5 {
   line-height: 5rem;
   text-align: center;
   cursor: pointer;
+  padding: 0 0 0 10px;
 }
 
 .button {
@@ -501,6 +488,7 @@ section, main, footer, header, article {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 10px;
 }
 
 .navigation {
@@ -508,12 +496,17 @@ section, main, footer, header, article {
   font-size: 2rem;
   line-height: 5rem;
   margin: 0;
+  max-width: 500px;
 }
 
 .navigation__link {
   list-style: none;
   cursor: pointer;
   padding-right: 30px;
+}
+
+.header__lang__change {
+  margin: 0;
 }
 
 a {
@@ -539,7 +532,7 @@ a:hover {
 .hero__content {
   padding-top: 110px;
   padding-bottom: 330px;
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
 .hero__title {
@@ -558,7 +551,7 @@ a:hover {
 .skills__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 25px;
 }
 
 .skill {
@@ -575,10 +568,6 @@ a:hover {
 .icon-gold {
   width: 65px;
   height: 65px;
-  margin: 0 auto;
-}
-
-.skill__icon {
   margin: 0 auto;
 }
 
@@ -663,6 +652,31 @@ a:hover {
   background-repeat: no-repeat;
   margin: auto;
   max-width: 1440px;
+}
+
+.section__title {
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 65px auto 0;
+}
+
+.title__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title__line {
+  width: 50%;
+  height: 2px;
+  background-color: #BDAE82;
+}
+
+.title__style {
+  padding: 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
