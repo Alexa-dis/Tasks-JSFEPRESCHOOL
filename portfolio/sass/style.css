@@ -50,6 +50,8 @@ h4 {
   font-weight: bold;
   line-height: 4rem;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 19px;
 }
 
 h5 {
@@ -551,7 +553,10 @@ a:hover {
 .skills__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 25px;
+  align-items: center;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 
 .skill {
@@ -563,6 +568,7 @@ a:hover {
   text-align: center;
   font-size: 18px;
   line-height: 36px;
+  margin-bottom: 12px;
 }
 
 .icon-gold {
@@ -600,10 +606,11 @@ a:hover {
   width: 65px;
   height: 65px;
   background-repeat: no-repeat;
+  margin-left: 30px;
 }
 
 .portfolio__button__wrapper {
-  margin: 0 auto 60px;
+  margin: 26px auto 60px;
   display: flex;
   justify-content: space-between;
   max-width: 895px;
@@ -614,10 +621,11 @@ a:hover {
   flex-wrap: wrap;
   max-width: 1400px;
   justify-content: space-between;
+  margin-bottom: -27px;
 }
 
 .gallery__img {
-  padding-bottom: 25px;
+  padding-bottom: 23px;
 }
 
 .list__item {
