@@ -10,6 +10,7 @@
 @import "base/buttons";
 @import "base/logo";
 @import "base/normalize";
+@import "base/icons";
 
 //Layouts
 @import "layouts/wrapper";
@@ -19,7 +20,9 @@
 @import "layouts/portfolio";
 @import "layouts/video";
 @import "layouts/price";
+@import "layouts/contact-me";
+@import "layouts/footer";
 
 //Components
-@import "components/contact-me";
 @import "components/titles";
+@import "components/navigation";

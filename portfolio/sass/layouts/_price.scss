@@ -1,8 +1,8 @@
 .price-items_wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
-    margin-top: 30px;
+    margin: 30px 0 100px 0;
+    flex-wrap: wrap;
 }
 
 .price-item {

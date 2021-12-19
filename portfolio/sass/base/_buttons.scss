@@ -2,46 +2,37 @@
     background-color: transparent;
     border-style: none;
     color: $color-text;
-    font-size: 2rem;
-    line-height: 5rem;
+    @include font(2rem, $weight: normal );
     text-align: center;
     cursor: pointer;
     padding: 0 0 0 10px;
 }
 
 .button {
-    padding-top:8px ;
-    padding-bottom: 8px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2rem;
-    line-height: 4rem;
+    padding: 7px 0 8px 0;
+    @extend %font-prim;
+    @include font(2rem, $weight: normal );
     text-align: center;
     width: 220px;
     height: 55px;
     cursor: pointer;
-}
-
-.button_bordered{
-    background-color: transparent;
-    border: 2px solid $color-primary;
-    color: $color-primary;
-    transition: all 0.3s;
-}
-
-.button_bordered:hover {
-    color: $color-text;
-    transition: all 0.3s;
-}
-
-.button_colored{
-    background-color: $color-primary;
-    border: 2px solid $color-primary;
-    transition: all 0.3s;
-}
-
-.button_colored:hover {
-    color: $color-text;
-    transition: all 0.3s;
+    &_bordered {
+        background-color: transparent;
+        border: 2px solid $color-primary;
+        color: $color-primary;
+        @extend %transition;
+        &:hover {
+            color: $color-text;
+            @extend %transition;
+        }
+    }
+    &_colored{
+        background-color: $color-primary;
+        border: 2px solid $color-primary;
+        @extend %transition;
+        &:hover {
+            color: $color-text;
+            @extend %transition;
+        }
+    }
 }
