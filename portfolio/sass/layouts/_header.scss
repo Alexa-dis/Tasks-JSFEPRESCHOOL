@@ -12,11 +12,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 15px;
 }
 
 .header__lang__change{
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 72px;
 }
 
 

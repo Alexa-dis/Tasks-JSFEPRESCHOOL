@@ -2,10 +2,19 @@
     background-color: transparent;
     border-style: none;
     color: $color-text;
-    @include font(2rem, $weight: normal );
+    @include font(2rem );
     text-align: center;
     cursor: pointer;
-    padding: 0 0 0 10px;
+    display: flex;
+    padding: 0;
+}
+
+.button__slash{
+    @include font(2rem );
+}
+
+.button_en {
+    color: $color-primary; 
 }
 
 .button {
