@@ -43,23 +43,45 @@
 .inst {
   background-image: url(/assets/svg/inst.svg);
   width: 32px;
-  height: 32px;
+  height: 32px;  
+  @extend %transition;
+  &:hover {
+    @extend %color_filter;
+    @extend %transition;
+  }
 }
 
 .fb {
   background-image: url("/assets/svg/fb.svg");
   width: 32px;
-  height: 32px;
+  height: 32px; 
+  @extend %transition;
+  &:hover {
+    @extend %color_filter;
+    @extend %transition;
+  }
 }
 
 .tw {
   background-image: url(/assets/svg/tw.svg);
   width: 32px;
-  height: 32px;
+  height: 32px; 
+  @extend %transition;
+  &:hover {
+    @extend %color_filter;
+    @extend %transition;
+  }
 }
 
 .pint {
   background-image: url(/assets/svg/pinterest.svg);
   width: 32px;
-  height: 32px;
+  height: 32px;  
+  @extend %transition;
+  &:hover {
+    @extend %color_filter;
+    @extend %transition;
+  }  
 }
+
+

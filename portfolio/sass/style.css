@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather+Sans:wght@400;700&family=Merriweather:wght@400;700&display=swap");
-a:hover, a, .mask, .button_colored:hover, .button_colored, .button_bordered:hover, .button_bordered {
+a:hover, a, .button__play:hover, .button__play, .pint:hover, .pint, .tw:hover, .tw, .fb:hover, .fb, .inst:hover, .inst, .mask, .button_colored:hover, .button_colored, .button_bordered:hover, .button_bordered {
   transition: all 0.3s ease-out;
 }
 
@@ -9,6 +9,10 @@ h5, h3, h2, h1 {
 
 .button, body {
   font-family: Inter;
+}
+
+.button__play:hover, .pint:hover, .tw:hover, .fb:hover, .inst:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
 html {
@@ -511,25 +515,21 @@ section, main, footer, header, article {
   width: 32px;
   height: 32px;
 }
-
 .fb {
   background-image: url("/assets/svg/fb.svg");
   width: 32px;
   height: 32px;
 }
-
 .tw {
   background-image: url(/assets/svg/tw.svg);
   width: 32px;
   height: 32px;
 }
-
 .pint {
   background-image: url(/assets/svg/pinterest.svg);
   width: 32px;
   height: 32px;
 }
-
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
@@ -584,6 +584,7 @@ section, main, footer, header, article {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   max-width: 1360px;
   margin: 0 auto;
   padding-top: 30px;
@@ -643,9 +644,12 @@ section, main, footer, header, article {
   background-image: url(/assets/svg/play-btn.svg);
   width: 150px;
   height: 150px;
+  background-color: transparent;
+  border: none;
   position: absolute;
   left: 626px;
   top: 280px;
+  cursor: pointer;
 }
 
 .price-items_wrapper {
@@ -670,7 +674,7 @@ section, main, footer, header, article {
 }
 
 .contact {
-  background-image: url("/assets/img/contacts.jpg");
+  background-image: url(/assets/img/contacts.jpg);
   background-repeat: no-repeat;
   margin: auto;
   max-width: 1440px;
@@ -738,19 +742,18 @@ section, main, footer, header, article {
   list-style-type: none;
   width: 188px;
   justify-content: space-between;
-  padding: 0;
+  padding: 2px 0 0 0;
 }
 
 .footer__github {
   font-size: 19px;
 }
 .footer__github span {
-  padding-right: 14px;
+  padding-right: 17px;
 }
 
 .footer_RSS {
   font-size: 20px;
-  padding-left: 12px;
 }
 
 .section__title {
