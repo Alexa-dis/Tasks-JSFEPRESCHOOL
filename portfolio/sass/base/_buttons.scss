@@ -1,0 +1,47 @@
+.lang__button {
+    background-color: transparent;
+    border-style: none;
+    color: $color-text;
+    @include font(2rem );
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+
+.button__slash{
+    @include font(2rem );
+}
+
+.button_en {
+    color: $color-primary; 
+}
+
+.button {
+    padding: 6px 0 8px 0;
+    @extend %font-prim;
+    @include font(2rem, $weight: normal );
+    text-align: center;
+    width: 220px;
+    height: 55px;
+    cursor: pointer;
+    &_bordered {
+        background-color: transparent;
+        border: 2px solid $color-primary;
+        color: $color-primary;
+        @extend %transition;
+        &:hover {
+            color: $color-text;
+            @extend %transition;
+        }
+    }
+    &_colored{
+        background-color: $color-primary;
+        border: 2px solid $color-primary;
+        @extend %transition;
+        &:hover {
+            color: $color-text;
+            @extend %transition;
+        }
+    }
+}

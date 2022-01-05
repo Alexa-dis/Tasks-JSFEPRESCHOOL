@@ -1,0 +1,21 @@
+.skills__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding-top: 28px;
+}
+
+.skill {
+  width: 20.5%;
+  text-align: center;
+  p {
+    max-width: 280px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 12px;
+  }
+}

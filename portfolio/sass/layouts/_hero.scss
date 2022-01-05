@@ -1,0 +1,23 @@
+.main__wrapper {
+  background-image: url(/assets/img/bg.jpg);
+  max-width: 1440px;
+  height: 910px;
+  margin: 0 auto;
+}
+
+.hero__content {
+  padding: 108px 0 330px 60px;
+}
+
+.hero__title {
+  margin: 0;
+  padding: 51px 0 10px;
+}
+
+.hero__description {
+  font-size: 2rem;
+  line-height: 4rem;
+  max-width: 470px;
+  margin: 0;
+  padding-bottom: 25px;
+}

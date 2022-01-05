@@ -1,0 +1,49 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  @extend %font-prim;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  @extend %font-add;
+  @include font(6rem);
+}
+
+h2 {
+  @extend %font-add;
+  @include font(4rem);
+  text-align: center;
+  color: $color-primary;
+}
+
+h3 {
+  @extend %font-add;
+  @include font(2.8rem);
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+
+h4 {
+  @include font(2rem);
+  text-align: center;
+  margin: 29px 0 20px 0;
+}
+
+h5 {
+  @extend %font-add;
+  @include font(2.4rem);
+  text-align: center;
+  color: $color-primary;
+  margin: 20px 0 10px 0;
+}
+
+
+
+
+

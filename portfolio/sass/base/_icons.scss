@@ -1,0 +1,87 @@
+.icon-gold {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.icon__camera {
+  background-image: url(/assets/svg/camera.svg);
+  display: inline-block;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.icon__video {
+  background-image: url(/assets/svg/video.svg);
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+}
+
+.icon__photo {
+  background-image: url(/assets/svg/image.svg);
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+}
+
+.icon__mic {
+  background-image: url(/assets/svg/mic.svg);
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+  margin-left: 30px;
+}
+
+.social__icon {
+    display: inline-block;
+}
+
+.inst {
+  background-image: url(/assets/svg/inst.svg);
+  width: 32px;
+  height: 32px;  
+  @extend %transition;
+  &:hover {
+    @extend %color_filter;
+    @extend %transition;
+  }
+}
+
+.fb {
+  background-image: url("/assets/svg/fb.svg");
+  width: 32px;
+  height: 32px; 
+  @extend %transition;
+  &:hover {
+    @extend %color_filter;
+    @extend %transition;
+  }
+}
+
+.tw {
+  background-image: url(/assets/svg/tw.svg);
+  width: 32px;
+  height: 32px; 
+  @extend %transition;
+  &:hover {
+    @extend %color_filter;
+    @extend %transition;
+  }
+}
+
+.pint {
+  background-image: url(/assets/svg/pinterest.svg);
+  width: 32px;
+  height: 32px;  
+  @extend %transition;
+  &:hover {
+    @extend %color_filter;
+    @extend %transition;
+  }  
+}
+
+

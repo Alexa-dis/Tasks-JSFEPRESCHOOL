@@ -1,0 +1,27 @@
+.footer__wrapper {
+    display: flex;
+    max-width: 1400px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 188px;
+    justify-content: space-between;
+    padding: 2px 0 0 0;
+}
+
+.footer__github {
+    font-size: 19px;
+    span {
+        padding-right: 17px;
+    }
+}
+
+.footer_RSS {
+    font-size: 20px;
+}
