@@ -8,7 +8,7 @@
   background-color: $color-text;
   @extend %transition;
 
-  -webkit-mask-image: url("/assets/svg/logo.svg");
+  -webkit-mask-image: url(../assets/svg/logo.svg);
   -webkit-mask-size: cover;
 }
 
