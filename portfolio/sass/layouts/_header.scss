@@ -20,6 +20,9 @@
   display: flex;
   justify-content: space-between;
   width: 70px;
+  @include media-tablet {
+    width: 82px;
+  }
 }
 
 

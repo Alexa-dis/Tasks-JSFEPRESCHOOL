@@ -13,6 +13,9 @@ body {
 h1 {
   @extend %font-add;
   @include font(6rem);
+  @include media-tablet {
+    @include font(3.2rem);
+  }
 }
 
 h2 {

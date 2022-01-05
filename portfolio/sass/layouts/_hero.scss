@@ -3,15 +3,25 @@
   max-width: 1440px;
   height: 910px;
   margin: 0 auto;
+  @include media-tablet {
+    max-width: 768px;
+    height: 590px;
+  }
 }
 
 .hero__content {
   padding: 108px 0 330px 60px;
+  @include media-tablet {
+    padding: 27px 0 330px 0;
+  }
 }
 
 .hero__title {
   margin: 0;
   padding: 51px 0 10px;
+  @include media-tablet {
+    padding: 51px 0 20px;
+  }
 }
 
 .hero__description {
@@ -20,4 +30,9 @@
   max-width: 470px;
   margin: 0;
   padding-bottom: 25px;
+  @include media-tablet {
+    max-width: 390px;
+    line-height: 2.4rem;
+    padding-bottom: 59px;
+  }
 }

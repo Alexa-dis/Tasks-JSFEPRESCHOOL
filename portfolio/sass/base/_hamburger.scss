@@ -1,0 +1,25 @@
+.hamburger {
+    display: none;
+    
+    @include media-tablet {
+        display: block;
+        padding-left: 20px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.hamburger__lines {
+    display: none;
+    @extend %transition;
+    &:hover {
+    @extend %color_filter;
+    @extend %transition;
+  }
+    @include media-tablet {
+        display: block;
+        background-image: url(/assets/svg/hamburger_unvisited.svg);
+        width: 50px;
+        height: 50px;   
+  }
+}
