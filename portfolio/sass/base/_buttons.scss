@@ -18,7 +18,7 @@
 }
 
 .button {
-    padding: 7px 0 8px 0;
+    padding: 6px 0 8px 0;
     @extend %font-prim;
     @include font(2rem, $weight: normal );
     text-align: center;

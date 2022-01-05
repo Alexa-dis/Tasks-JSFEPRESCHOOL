@@ -57,7 +57,7 @@ h4 {
   font-weight: bold;
   line-height: 4rem;
   text-align: center;
-  margin: 30px 0 19px 0;
+  margin: 29px 0 20px 0;
 }
 
 h5 {
@@ -96,7 +96,7 @@ h5 {
 }
 
 .button {
-  padding: 7px 0 8px 0;
+  padding: 6px 0 8px 0;
   font-size: 2rem;
   font-style: normal;
   font-weight: normal;
@@ -555,6 +555,7 @@ section, main, footer, header, article {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: -2px;
 }
 
 .header__content {
@@ -567,7 +568,7 @@ section, main, footer, header, article {
   margin: 0;
   display: flex;
   justify-content: space-between;
-  width: 72px;
+  width: 70px;
 }
 
 .main__wrapper {
@@ -601,11 +602,11 @@ section, main, footer, header, article {
   flex-wrap: wrap;
   max-width: 1360px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 28px;
 }
 
 .skill {
-  max-width: 320px;
+  width: 20.5%;
   text-align: center;
 }
 .skill p {
@@ -619,6 +620,7 @@ section, main, footer, header, article {
 .portfolio__button__wrapper {
   margin: 26px auto 60px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 895px;
 }
@@ -661,21 +663,21 @@ section, main, footer, header, article {
   background-color: transparent;
   border: none;
   position: absolute;
-  left: 626px;
-  top: 280px;
+  left: 44.6%;
+  top: 39.5%;
   cursor: pointer;
 }
 
 .price-items_wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0 100px 0;
+  margin: 28px 0 100px 0;
   flex-wrap: wrap;
 }
 
 .price-item {
-  width: 450px;
-  height: 505px;
+  width: 32.1%;
+  height: 504px;
   border: 2px solid #BDAE82;
   display: flex;
   flex-direction: column;
@@ -684,7 +686,8 @@ section, main, footer, header, article {
 
 .price-item__list {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
+  margin-top: 2px;
 }
 
 .contact {
@@ -699,7 +702,7 @@ section, main, footer, header, article {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 950px;
+  margin-left: 68%;
   padding-top: 25px;
 }
 
@@ -707,7 +710,7 @@ section, main, footer, header, article {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  width: 450px;
+  max-width: 450px;
   padding-top: 7px;
 }
 
