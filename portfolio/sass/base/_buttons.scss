@@ -44,4 +44,7 @@
             @extend %transition;
         }
     }
+    @include media-tablet {
+        margin-bottom: 5px;
+    }
 }

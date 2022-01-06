@@ -3,7 +3,12 @@
     max-width: 1400px;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
+    padding: 40px 0 0 0;
+    @include media-tablet {
+        max-width: 768px;
+        flex-direction: column;
+        padding: 30px 0;
+    }
 }
 
 .socials {
@@ -19,9 +24,17 @@
     font-size: 19px;
     span {
         padding-right: 17px;
+        
+    }
+    @include media-tablet {
+        padding-left: 11px;
+        font-size: 20px;
     }
 }
 
 .footer_RSS {
     font-size: 20px;
+    @include media-tablet {
+        padding: 17px 2px 11px 0;
+    }
 }

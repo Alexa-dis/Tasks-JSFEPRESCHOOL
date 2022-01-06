@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 895px;
+  @include media-tablet {
+    margin: 31px auto 55px;
+    max-width: 445px;
+  }
 }
 
 .portfolio__gallery {
@@ -12,10 +16,18 @@
     max-width: 1400px;
     justify-content: space-between;
     margin-bottom: -27px;
+    @include media-tablet {
+        margin-bottom: -22px;
+    }
+    
 }
 
 .gallery__img {
     padding-bottom: 23px;
+    @include media-tablet {
+        margin: 0 auto;
+        padding-bottom: 21.5px;
+    }
 }
 
 .list__item {

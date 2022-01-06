@@ -14,7 +14,8 @@ h1 {
   @extend %font-add;
   @include font(6rem);
   @include media-tablet {
-    @include font(3.2rem);
+    @include font(3.2rem, $weight:normal);
+
   }
 }
 
@@ -23,6 +24,9 @@ h2 {
   @include font(4rem);
   text-align: center;
   color: $color-primary;
+  @include media-tablet {
+    @include font(3.2rem);
+  }
 }
 
 h3 {
@@ -30,12 +34,19 @@ h3 {
   @include font(2.8rem);
   text-align: center;
   margin: 40px 0 0 0;
+  @include media-tablet {
+    margin: 40px 0 0 0;
+  }
 }
 
 h4 {
   @include font(2rem);
   text-align: center;
   margin: 29px 0 20px 0;
+  @include media-tablet {
+    margin: 0;
+    padding:  12px 0 21px 0;
+  }
 }
 
 h5 {
