@@ -1,18 +1,19 @@
 .main__wrapper {
-  background-image: url(../assets/img/bg.jpg);
+  background: url(../assets/img/bg.jpg) top center;
   max-width: 1440px;
-  height: 910px;
+  height: auto;
   margin: 0 auto;
+  background-size: cover;
   @include media-tablet {
-    max-width: 768px;
-    height: 590px;
+    background: url(../assets/img/bg-tablet.jpg) top center;
+    background-repeat: no-repeat;
   }
 }
 
 .hero__content {
   padding: 108px 0 330px 60px;
   @include media-tablet {
-    padding: 27px 0 330px 0;
+    padding: 27px 0 148px 0;
   }
 }
 
@@ -34,5 +35,8 @@
     max-width: 390px;
     line-height: 2.4rem;
     padding-bottom: 59px;
+  }
+  @include media-mobile-big {
+    display: none;
   }
 }

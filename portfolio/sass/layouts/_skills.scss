@@ -6,9 +6,17 @@
   max-width: 1360px;
   margin: 0 auto;
   padding-top: 28px;
+  @include media-content {
+    align-items:flex-start;
+    justify-content: space-around;
+  }
   @include media-tablet {
     width: 100%;
     padding-bottom: 8px;
+    justify-content: space-between;
+  }
+  @include media-mobile-big {
+    justify-content: space-around;
   }
 }
 
@@ -25,6 +33,14 @@
       line-height: 22px;
       margin: 0 auto;
     }
+    @include media-mobile-big {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+  @include media-laptop {
+    min-width: 250px;
+    padding-bottom: 74px;
   }
   @include media-tablet {
     width: 300px;

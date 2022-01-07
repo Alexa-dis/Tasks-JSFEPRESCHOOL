@@ -7,10 +7,16 @@
     cursor: pointer;
     display: flex;
     padding: 0;
+    @include media-mobile-big {
+        display: none;
+    }
 }
 
 .button__slash{
     @include font(2rem );
+    @include media-mobile-big {
+        display: none;
+    }
 }
 
 .button_en {
@@ -44,7 +50,16 @@
             @extend %transition;
         }
     }
+    @include media-content {
+        margin-bottom: 5px;
+    }
     @include media-tablet {
         margin-bottom: 5px;
+    }
+    @include media-mobile-big {
+        width: 160px;
+        height: 50px;
+        line-height: 25px;
+        @include font(1.6rem, $weight: normal );
     }
 }

@@ -1,8 +1,22 @@
 .wrapper {
   max-width: $content-width;
   margin: 0 auto;
+  @include media-content{
+    margin: 0 60px;
+  }
   @include media-tablet {
     margin: 0 60px;
+  }
+  @include media-mobile-big {
+    margin: 0 20px;
+  }
+}
+
+.video__section__wrapper {
+  max-width: $content-width;
+  margin: 0 auto;
+  @include media-tablet {
+    margin-top: -22px;
   }
 }
 

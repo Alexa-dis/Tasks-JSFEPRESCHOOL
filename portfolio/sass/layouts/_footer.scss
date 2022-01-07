@@ -9,6 +9,9 @@
         flex-direction: column;
         padding: 30px 0;
     }
+    @include media-mobile-big {
+        justify-content: space-around;
+    }
 }
 
 .socials {
@@ -30,11 +33,19 @@
         padding-left: 11px;
         font-size: 20px;
     }
+    @include media-mobile-big {
+        text-align: center;
+        font-size: 16px;
+    }
 }
 
 .footer_RSS {
     font-size: 20px;
     @include media-tablet {
         padding: 17px 2px 11px 0;
+    }
+    @include media-mobile-big {
+        text-align: center;
+        font-size: 16px;
     }
 }

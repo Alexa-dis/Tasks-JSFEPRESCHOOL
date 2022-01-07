@@ -4,9 +4,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 895px;
+  @include media-laptop {
+    justify-content: space-around;
+    margin: 31px auto 55px;
+  }
   @include media-tablet {
     margin: 31px auto 55px;
     max-width: 445px;
+    justify-content: space-around;
   }
 }
 
@@ -16,8 +21,16 @@
     max-width: 1400px;
     justify-content: space-between;
     margin-bottom: -27px;
+    @include media-content {
+        justify-content: space-around;
+    }
+    @include media-laptop {
+        margin: 0 auto;
+        justify-content: space-around;
+    }
     @include media-tablet {
         margin-bottom: -22px;
+        margin: 0 auto;
     }
     
 }
@@ -27,6 +40,12 @@
     @include media-tablet {
         margin: 0 auto;
         padding-bottom: 21.5px;
+    }
+    img {
+        @include media-mobile-big {
+            width: 240.62px;
+            height: 300px;
+        }
     }
 }
 
