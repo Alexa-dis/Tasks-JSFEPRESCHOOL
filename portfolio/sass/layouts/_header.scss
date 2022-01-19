@@ -7,12 +7,14 @@
   align-items: center;
   justify-content: space-between;
   margin-top: -2px;
+  overflow-x: hidden;
 }
 
 .header__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 
 .header__lang__change{
@@ -22,7 +24,7 @@
   width: 70px;
   @include media-tablet {
     width: 82px;
-    margin-right: 27px;
+    margin-right: 23px;
   }
 }
 
