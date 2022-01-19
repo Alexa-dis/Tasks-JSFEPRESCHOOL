@@ -5,13 +5,14 @@
     display: block;
     width: 50px;
     height: 50px;
-  }
+    }
 }
 
 .hamburger__lines {
   display: none;
   cursor: pointer;
   @extend %transition;
+  
   &:hover {
     @extend %color_filter;
     @extend %transition;
@@ -31,8 +32,9 @@
   height: 2.5px;
   background: $color-text;
   margin: 5px 0;
-  z-index: 15;
   transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
 }
 
 .hamburger.open .line1 {
@@ -47,9 +49,3 @@
   transform: rotate(45deg) translate(-16px, -1px);
 }
 
-.open {
-  @include media-tablet {
-    right: 0;
-    transition: 0.5s;
-  }
-}

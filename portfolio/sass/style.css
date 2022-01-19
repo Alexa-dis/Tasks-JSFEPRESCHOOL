@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather+Sans:wght@400;700&family=Merriweather:wght@400;700&display=swap");
-a:hover, a, .button__play:hover, .button__play, .pint:hover, .pint, .tw:hover, .tw, .fb:hover, .fb, .inst:hover, .inst, .mask, .hamburger__lines:hover, .hamburger__lines, .button_colored:hover, .button_colored, .button_bordered:hover, .button_bordered {
+a:hover, a, .navigation, .button__play:hover, .button__play, .pint:hover, .pint, .tw:hover, .tw, .fb:hover, .fb, .inst:hover, .inst, .mask, .hamburger__lines:hover, .hamburger__lines, .button_colored:hover, .button_colored, .button_bordered:hover, .button_bordered {
   transition: all 0.3s ease-out;
 }
 
@@ -24,6 +24,7 @@ body {
   font-size: 1.6rem;
   background-color: black;
   color: white;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -248,8 +249,9 @@ h5 {
   height: 2.5px;
   background: #FFFFFF;
   margin: 5px 0;
-  z-index: 15;
   transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
 }
 
 .hamburger.open .line1 {
@@ -262,13 +264,6 @@ h5 {
 
 .hamburger.open .line3 {
   transform: rotate(45deg) translate(-16px, -1px);
-}
-
-@media (max-width: 768px) {
-  .open {
-    right: 0;
-    transition: 0.5s;
-  }
 }
 
 .logo {
@@ -730,14 +725,12 @@ section, main, footer, header, article {
   align-items: center;
   justify-content: space-between;
   margin-top: -2px;
-  overflow-x: hidden;
 }
 
 .header__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow-x: hidden;
 }
 
 .header__lang__change {
@@ -1254,12 +1247,28 @@ section, main, footer, header, article {
     position: absolute;
     right: -775px;
     top: 0;
-    z-index: 1;
     flex-direction: column;
     width: 100%;
     background-color: black;
     font-size: 3.5rem;
     padding: 142px 0 134px 127px;
+  }
+}
+@media (max-width: 414px) {
+  .navigation {
+    right: -290px;
+    font-size: 2.2rem;
+    padding: 100px 0 40px 50px;
+    width: 270px;
+  }
+}
+
+.header__navigation.open .navigation1 {
+  transform: translate(-620px, 0);
+}
+@media (max-width: 414px) {
+  .header__navigation.open .navigation1 {
+    transform: translate(-250px, 0);
   }
 }
 
@@ -1271,6 +1280,13 @@ section, main, footer, header, article {
 @media (max-width: 768px) {
   .navigation__link {
     padding-bottom: 38.5px;
+    width: 100px;
+  }
+}
+@media (max-width: 414px) {
+  .navigation__link {
+    padding-bottom: 20px;
+    width: 70px;
   }
 }
 

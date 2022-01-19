@@ -8,6 +8,7 @@ body {
   @extend %font-prim;
   background-color: black;
   color: white;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -15,7 +16,6 @@ h1 {
   @include font(6rem);
   @include media-tablet {
     @include font(3.2rem, $weight:normal);
-
   }
 }
 
