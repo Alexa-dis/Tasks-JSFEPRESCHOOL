@@ -11,9 +11,10 @@
     top: 0;
     flex-direction: column;
     width: 100%;
-    background-color: black;
+    background-color: $color-background;
     font-size: 3.5rem;
     padding: 142px 0 134px 127px;
+    height: 100vh;
   }
   @include media-mobile-big{
     right: -290px;

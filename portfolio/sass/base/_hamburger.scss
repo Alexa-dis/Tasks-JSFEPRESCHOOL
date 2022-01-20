@@ -38,7 +38,8 @@
 }
 
 .hamburger.open .line1 {
-  transform: rotate(-45deg) translate(-16px, 1px);
+  transform: rotate(-45deg) translate(-11px, 8px);
+  width: 60px;
 }
 
 .hamburger.open .line2 {
@@ -46,6 +47,7 @@
 }
 
 .hamburger.open .line3 {
-  transform: rotate(45deg) translate(-16px, -1px);
+  transform: rotate(45deg) translate(-11px, -7px);
+  width: 60px;
 }
 
