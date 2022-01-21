@@ -40,6 +40,8 @@
 .hamburger.open .line1 {
   transform: rotate(-45deg) translate(-11px, 8px);
   width: 60px;
+  position: sticky;
+  top: 0;
 }
 
 .hamburger.open .line2 {
