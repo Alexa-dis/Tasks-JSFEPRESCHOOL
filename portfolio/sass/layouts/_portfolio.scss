@@ -4,6 +4,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 895px;
+  @include media-laptop {
+    justify-content: space-around;
+    margin: 30px auto 55px;
+  }
+  @include media-tablet {
+    max-width: 445px;
+  }
 }
 
 .portfolio__gallery {
@@ -12,10 +19,30 @@
     max-width: 1400px;
     justify-content: space-between;
     margin-bottom: -27px;
+    @include media-content {
+        justify-content: space-around;
+    }
+    @include media-laptop {
+        margin: 0 auto;
+    }
 }
 
 .gallery__img {
     padding-bottom: 23px;
+    @include media-tablet {
+        margin: 0 auto;
+        padding-bottom: 21.5px;
+    }
+    img {
+        @media (max-width: 480px) {
+            width: 360px;
+            height: 449px;
+        }
+        @include media-mobile-big {
+            width: 240.62px;
+            height: 300px;
+        }
+    }
 }
 
 .list__item {

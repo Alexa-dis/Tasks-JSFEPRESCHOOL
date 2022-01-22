@@ -1,13 +1,26 @@
 .video__wrapper {
-    margin-top: 25px;
+    margin-top: 28px;
     position: relative;
     padding-bottom: 2px;
+    @include media-tablet {
+        margin-top: 32px;
+    }
 }
+
 
 .video__img {
     background-image: url(../assets/img/video-player.jpg);
     max-width: 100%;
     height: 705px;
+    background-size: cover;
+    @include media-tablet {
+        background-image: url(../assets/img/video-player-tablet.jpg);
+        height: 418px;
+    }
+    @include media-mobile-big {
+        height: 300px;
+        width: 100%;
+    }
 }
 
 .button__play {
@@ -17,13 +30,23 @@
     background-color: transparent;
     border: none;
     position: absolute;
-    left: 44.6%;
-    top: 39.5%;
+    left: 45%;
+    top: 39%;
     cursor: pointer;
     @extend %transition;
-}
-
-.button__play:hover {
+    &:hover {
     @extend %color_filter;
     @extend %transition;
-  }
+   }
+   @include media-tablet {
+    background-size: 75px 75px;
+    background-repeat: no-repeat;
+    left: 45%;
+    top: 40.5%;
+   }
+   @include media-mobile-big {
+    left: 42%;
+    top: 34%;
+   }
+}
+

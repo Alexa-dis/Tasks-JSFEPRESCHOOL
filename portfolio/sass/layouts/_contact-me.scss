@@ -4,14 +4,29 @@
   margin: auto;
   max-width: 1440px;
   height: 700px;
+  @include media-tablet {
+    background-image: url(/assets/img/contacts_tablet.jpg);
+    max-width: 768px;
+    height: 600px;
+    margin: -68px auto 0 ;
+  }
 }
 
 .contact__wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 68%;
+  margin-left: 67.8%;
   padding-top: 25px;
+  @include media-tablet {
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 35px;
+  }
+  @include media-laptop {
+    margin: 0 auto;
+    align-items: center;
+  }
 }
 
 .contact__form {
@@ -20,6 +35,9 @@
   flex-direction: column;
   max-width: 450px;
   padding-top: 7px;
+  @include media-tablet {
+    padding: 13px 0 3px 0;
+  }
 }
 
 .contact_input {
@@ -29,9 +47,10 @@
   margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid $color-primary;
-
   font-size: 20px;
-  
+  @include media-mobile-big {
+    font-size: 16px;
+  }
 }
 
 .contact_input::-webkit-input-placeholder { /* WebKit browsers */
@@ -40,13 +59,19 @@
 
 .contact_textarea {
   width: 100%;
-  padding: 12px 0 15px 18px;
+  padding: 12px 0 17px 18px;
   margin-bottom: 25px;
   background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid $color-primary;
   color: $color-primary;
   font-size: 20px;
   resize: none;
+  @include media-laptop {
+    padding: 12px 0 15px 18px;
+  }
+  @include media-mobile-big {
+    font-size: 16px;
+  }
 }
 
 .contact_textarea::-webkit-input-placeholder { /* WebKit browsers */
