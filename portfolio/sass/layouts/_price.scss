@@ -1,8 +1,11 @@
 .price-items_wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 28px 0 100px 0;
+    margin: 26px 0 100px 0;
     flex-wrap: wrap;
+    @include media-tablet {
+        margin: 28px 0 100px 0;
+    }
     @include media-mobile-big {
         justify-content: space-around;
     }
@@ -14,6 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 43px;
     @include media-laptop {
         min-width: 300px;
         margin: 4px auto 47px;

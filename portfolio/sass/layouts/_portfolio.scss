@@ -34,6 +34,10 @@
         padding-bottom: 21.5px;
     }
     img {
+        @media (max-width: 480px) {
+            width: 360px;
+            height: 449px;
+        }
         @include media-mobile-big {
             width: 240.62px;
             height: 300px;

@@ -7,7 +7,7 @@
     @include media-tablet {
         max-width: 768px;
         flex-direction: column;
-        padding: 30px 0 25px;
+        padding: 30px 0 18px;
     }
     @include media-mobile-big {
         justify-content: space-around;
