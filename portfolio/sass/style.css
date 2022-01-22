@@ -76,11 +76,6 @@ h3 {
   text-align: center;
   margin: 40px 0 0 0;
 }
-@media (max-width: 768px) {
-  h3 {
-    margin: 40px 0 0 0;
-  }
-}
 @media (max-width: 414px) {
   h3 {
     font-size: 2.2rem;
@@ -121,11 +116,6 @@ h5 {
   text-align: center;
   color: #BDAE82;
   margin: 20px 0 10px 0;
-}
-@media (max-width: 768px) {
-  h5 {
-    margin: 15px 0 5px 0;
-  }
 }
 @media (max-width: 414px) {
   h5 {
@@ -232,6 +222,7 @@ h5 {
     display: block;
     width: 50px;
     height: 50px;
+    margin-right: 4px;
   }
 }
 
@@ -728,6 +719,11 @@ section, main, footer, header, article {
 .header {
   padding: 20px 0;
 }
+@media (max-width: 768px) {
+  .header {
+    padding-top: 22px;
+  }
+}
 
 .header__wrapper {
   display: flex;
@@ -751,7 +747,7 @@ section, main, footer, header, article {
 @media (max-width: 768px) {
   .header__lang__change {
     width: 82px;
-    margin-right: 23px;
+    margin-right: 21px;
   }
 }
 
@@ -784,7 +780,7 @@ section, main, footer, header, article {
 }
 @media (max-width: 768px) {
   .hero__title {
-    padding: 51px 0 21px;
+    padding: 51px 0 20px;
   }
 }
 
@@ -799,7 +795,7 @@ section, main, footer, header, article {
   .hero__description {
     max-width: 390px;
     line-height: 2.4rem;
-    padding-bottom: 59px;
+    padding-bottom: 60px;
   }
 }
 
@@ -815,13 +811,14 @@ section, main, footer, header, article {
 @media (max-width: 1400px) {
   .skills__wrapper {
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 @media (max-width: 768px) {
   .skills__wrapper {
-    width: 100%;
+    width: 644px;
     padding-bottom: 8px;
+    margin-right: 9px;
   }
 }
 @media (max-width: 414px) {
@@ -876,14 +873,12 @@ section, main, footer, header, article {
 @media (max-width: 1024px) {
   .portfolio__button__wrapper {
     justify-content: space-around;
-    margin: 31px auto 55px;
+    margin: 30px auto 55px;
   }
 }
 @media (max-width: 768px) {
   .portfolio__button__wrapper {
-    margin: 31px auto 55px;
     max-width: 445px;
-    justify-content: space-around;
   }
 }
 
@@ -901,13 +896,6 @@ section, main, footer, header, article {
 }
 @media (max-width: 1024px) {
   .portfolio__gallery {
-    margin: 0 auto;
-    justify-content: space-around;
-  }
-}
-@media (max-width: 768px) {
-  .portfolio__gallery {
-    margin-bottom: -22px;
     margin: 0 auto;
   }
 }
@@ -942,7 +930,7 @@ section, main, footer, header, article {
 }
 @media (max-width: 768px) {
   .video__wrapper {
-    margin-top: 30px;
+    margin-top: 32px;
   }
 }
 
@@ -954,6 +942,7 @@ section, main, footer, header, article {
 }
 @media (max-width: 768px) {
   .video__img {
+    background-image: url(../assets/img/video-player-tablet.jpg);
     height: 418px;
   }
 }
@@ -980,7 +969,7 @@ section, main, footer, header, article {
     background-size: 75px 75px;
     background-repeat: no-repeat;
     left: 45%;
-    top: 41%;
+    top: 40.5%;
   }
 }
 @media (max-width: 414px) {
@@ -1004,7 +993,6 @@ section, main, footer, header, article {
 
 .price-item {
   width: 32.1%;
-  height: 504px;
   border: 2px solid #BDAE82;
   display: flex;
   flex-direction: column;
@@ -1019,9 +1007,9 @@ section, main, footer, header, article {
 @media (max-width: 768px) {
   .price-item {
     width: 64.7%;
-    margin: 4px auto 47px;
+    margin: 4px auto 48px;
     justify-content: space-around;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
   }
 }
 @media (max-width: 414px) {
@@ -1150,7 +1138,7 @@ section, main, footer, header, article {
   .footer__wrapper {
     max-width: 768px;
     flex-direction: column;
-    padding: 30px 0;
+    padding: 30px 0 25px;
   }
 }
 @media (max-width: 414px) {

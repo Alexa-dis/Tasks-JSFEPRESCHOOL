@@ -38,9 +38,6 @@ h3 {
   @include font(2.8rem);
   text-align: center;
   margin: 40px 0 0 0;
-  @include media-tablet {
-    margin: 40px 0 0 0;
-  }
   @include media-mobile-big {
     @include font(2.2rem);
   }
@@ -65,9 +62,6 @@ h5 {
   text-align: center;
   color: $color-primary;
   margin: 20px 0 10px 0;
-  @include media-tablet {
-    margin: 15px 0 5px 0;
-  }
   @include media-mobile-big {
     @include font(2rem, $height: 10px);
   }

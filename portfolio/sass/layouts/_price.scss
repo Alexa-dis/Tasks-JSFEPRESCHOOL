@@ -10,7 +10,6 @@
 
 .price-item {
     width: 32.1%;
-    height: 504px;
     border: 2px solid $color-primary;
     display: flex;
     flex-direction: column;
@@ -21,9 +20,9 @@
     }
     @include media-tablet {
         width: 64.7%;
-        margin: 4px auto 47px;
+        margin: 4px auto 48px;
         justify-content: space-around;
-        padding-bottom: 30px;
+        padding-bottom: 35px;
     }
     @include media-mobile-big {
         min-width: 280px;

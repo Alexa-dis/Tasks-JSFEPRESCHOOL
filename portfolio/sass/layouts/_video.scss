@@ -3,7 +3,7 @@
     position: relative;
     padding-bottom: 2px;
     @include media-tablet {
-        margin-top: 30px;
+        margin-top: 32px;
     }
 }
 
@@ -14,6 +14,7 @@
     height: 705px;
     background-size: cover;
     @include media-tablet {
+        background-image: url(../assets/img/video-player-tablet.jpg);
         height: 418px;
     }
     @include media-mobile-big {
@@ -41,7 +42,7 @@
     background-size: 75px 75px;
     background-repeat: no-repeat;
     left: 45%;
-    top: 41%;
+    top: 40.5%;
    }
    @include media-mobile-big {
     left: 42%;

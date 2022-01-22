@@ -8,11 +8,12 @@
   padding-top: 28px;
   @include media-content {
     align-items:flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   @include media-tablet {
-    width: 100%;
+    width: 644px;
     padding-bottom: 8px;
+    margin-right: 9px;
   }
   @include media-mobile-big {
     justify-content: space-around;
