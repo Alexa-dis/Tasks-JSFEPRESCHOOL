@@ -1,5 +1,8 @@
 .header {
-  padding: 20px 0;
+  padding: 22px 0;
+  @include media-tablet {
+    padding-top: 22px;
+  }
 }
 
 .header__wrapper {
@@ -20,6 +23,10 @@
   display: flex;
   justify-content: space-between;
   width: 70px;
+  @include media-tablet {
+    width: 82px;
+    margin-right: 21px;
+  }
 }
 
 
