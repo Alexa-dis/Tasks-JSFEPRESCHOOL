@@ -12,4 +12,4 @@ function changeImage(event) {
 portfolioBtn.addEventListener('click', () => {
    portfolioImages.src = "./assets/img/gallery/autumn/1.jpg"
 });
-portfolioImages.forEach((img, index) => img.src = `./assets/img/gallery/winter/${index + 1}.jpg`);
+portfolioImages.forEach((img, index) => img.src = `./assets/img/gallery/autumn/${index + 1}.jpg`);

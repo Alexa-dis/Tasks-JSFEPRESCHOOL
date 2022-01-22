@@ -814,11 +814,22 @@ section, main, footer, header, article {
     justify-content: space-between;
   }
 }
+@media (max-width: 1024px) {
+  .skills__wrapper {
+    justify-content: space-around;
+  }
+}
 @media (max-width: 768px) {
   .skills__wrapper {
-    width: 644px;
+    justify-content: space-between;
+    max-width: 644px;
     padding-bottom: 8px;
     margin-right: 9px;
+  }
+}
+@media (max-width: 728px) {
+  .skills__wrapper {
+    justify-content: space-around;
   }
 }
 @media (max-width: 414px) {

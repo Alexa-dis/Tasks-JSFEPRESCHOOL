@@ -10,10 +10,17 @@
     align-items:flex-start;
     justify-content: space-between;
   }
-  @include media-tablet {
-    width: 644px;
+  @include media-laptop{
+    justify-content: space-around;
+  } 
+   @include media-tablet {
+    justify-content: space-between;
+    max-width: 644px;
     padding-bottom: 8px;
     margin-right: 9px;
+  }
+  @media (max-width: 728px) {
+    justify-content: space-around;
   }
   @include media-mobile-big {
     justify-content: space-around;
