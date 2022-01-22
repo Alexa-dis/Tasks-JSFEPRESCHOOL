@@ -138,9 +138,9 @@ h5 {
 
 .mainshadow {
   background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: none;
 }
 
@@ -161,22 +161,12 @@ h5 {
   display: flex;
   padding: 0;
 }
-@media (max-width: 414px) {
-  .lang__button {
-    display: none;
-  }
-}
 
 .button__slash {
   font-size: 2rem;
   font-style: normal;
   font-weight: bold;
   line-height: 4rem;
-}
-@media (max-width: 414px) {
-  .button__slash {
-    display: none;
-  }
 }
 
 .button_en {
@@ -810,11 +800,6 @@ section, main, footer, header, article {
     padding-bottom: 59px;
   }
 }
-@media (max-width: 414px) {
-  .hero__description {
-    display: none;
-  }
-}
 
 .skills__wrapper {
   display: flex;
@@ -835,7 +820,6 @@ section, main, footer, header, article {
   .skills__wrapper {
     width: 100%;
     padding-bottom: 8px;
-    justify-content: space-between;
   }
 }
 @media (max-width: 414px) {
@@ -1274,11 +1258,15 @@ section, main, footer, header, article {
     height: 100vh;
   }
 }
+@media (max-width: 620px) {
+  .navigation {
+    padding: 142px 0 134px 20%;
+  }
+}
 @media (max-width: 414px) {
   .navigation {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     padding: 100px 0 40px 50px;
-    width: 270px;
   }
 }
 
@@ -1292,10 +1280,15 @@ section, main, footer, header, article {
     margin-left: 214px;
   }
 }
+@media (max-width: 620px) {
+  .header__navigation.open .navigation1 {
+    width: 100%;
+  }
+}
 @media (max-width: 414px) {
   .header__navigation.open .navigation1 {
     transform: translate(5px, 0);
-    width: 250px;
+    width: 100%;
   }
 }
 

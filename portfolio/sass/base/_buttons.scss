@@ -7,16 +7,10 @@
     cursor: pointer;
     display: flex;
     padding: 0;
-    @include media-mobile-big {
-        display: none;
-    }
 }
 
 .button__slash{
     @include font(2rem );
-    @include media-mobile-big {
-        display: none;
-    }
 }
 
 .button_en {
