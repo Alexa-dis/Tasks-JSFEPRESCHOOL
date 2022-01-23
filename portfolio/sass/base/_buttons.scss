@@ -34,6 +34,7 @@
         background-color: transparent;
         border: 2px solid $color-primary;
         color: $color-primary;
+        -webkit-color: $color-primary;
         @extend %transition;
         &:hover {
             color: $color-text;
@@ -42,6 +43,7 @@
     }
     &_colored{
         background-color: $color-primary;
+        -webkit-background-color: $color-primary;
         border: 2px solid $color-primary;
         @extend %transition;
         &:hover {
