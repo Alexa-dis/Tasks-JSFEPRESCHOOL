@@ -18,7 +18,6 @@ h5, h3, h2, h1 {
 html {
   font-size: 10px;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -26,6 +25,10 @@ body {
   background-color: #000000;
   color: #FFFFFF;
   overflow-x: hidden;
+}
+
+body.lock {
+  overflow: hidden;
 }
 
 h1 {
@@ -254,7 +257,6 @@ h5 {
 .hamburger.open .line1 {
   transform: rotate(-45deg) translate(-11px, 8px);
   width: 60px;
-  position: sticky;
   top: 0;
 }
 
@@ -265,6 +267,11 @@ h5 {
 .hamburger.open .line3 {
   transform: rotate(45deg) translate(-11px, -7px);
   width: 60px;
+}
+
+.hamburger.open .hamburger__lines {
+  position: fixed;
+  z-index: 10;
 }
 
 .logo {
@@ -1054,6 +1061,7 @@ section, main, footer, header, article {
 @media (max-width: 414px) {
   .price-item__list {
     margin: 0px auto;
+    padding-bottom: 15px;
   }
 }
 
@@ -1278,6 +1286,7 @@ section, main, footer, header, article {
     font-size: 3.5rem;
     padding: 142px 0 134px 127px;
     height: 100vh;
+    min-height: 1024px;
   }
 }
 @media (max-width: 620px) {
@@ -1294,12 +1303,13 @@ section, main, footer, header, article {
 
 @media (max-width: 768px) {
   .header__navigation.open .navigation1 {
-    position: absolute;
+    position: fixed;
     transform: translate(5px, 0);
     opacity: 100;
     visibility: visible;
     width: 620px;
     margin-left: 214px;
+    z-index: 9;
   }
 }
 @media (max-width: 620px) {

@@ -17,6 +17,7 @@
     font-size: 3.5rem;
     padding: 142px 0 134px 127px;
     height: 100vh;
+    min-height: 1024px;
   }
   @media (max-width: 620px) {
     padding: 142px 0 134px 20%;
@@ -30,12 +31,13 @@
 
 .header__navigation.open .navigation1{
   @include media-tablet {
-  position: absolute;
+  position: fixed;
   transform:  translate(5px, 0);
   opacity: 100;
   visibility:visible;
   width: 620px;
   margin-left: 214px;
+  z-index: 9;
   }
   @media (max-width: 620px) {
     width: 100%;
