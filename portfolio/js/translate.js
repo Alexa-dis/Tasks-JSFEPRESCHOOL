@@ -81,3 +81,13 @@ const i18Obj = {
     }
   }
   export default i18Obj;
+
+  function getTranslate(ru) {
+    const allElementss = document.querySelectorAll('[data-i18]')
+    allElementss.forEach(function(элемент, индекс, массив) {
+        if (currentElement.placeholder) {
+            currentElement.placeholder = // Ваш код
+            currentElement.textContent = ''
+          }
+    })
+  }
