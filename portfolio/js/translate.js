@@ -1,5 +1,7 @@
 const i18Obj = {
     'en': {
+      'en': 'en',
+      'ru': 'ru',
       'skills': 'Skills',
       'portfolio': 'Portfolio',
       'video': 'Video',
@@ -20,6 +22,9 @@ const i18Obj = {
       'spring': 'Spring',
       'summer': 'Summer',
       'autumn': 'Autumn',
+      'standart': 'Standard',
+      'premium': 'Premium',
+      'gold': 'Gold',
       'price-description-1-span-1': 'One location',
       'price-description-1-span-2': '120 photos in color',
       'price-description-1-span-3': '12 photos in retouch',
@@ -40,6 +45,8 @@ const i18Obj = {
       'send-message': 'Send message'
     },
     'ru': {
+      'en': 'англ',
+      'ru': 'ру',
       'skills': 'Навыки',
       'portfolio': 'Портфолио',
       'video': 'Видео',
@@ -60,6 +67,9 @@ const i18Obj = {
       'spring': 'Весна',
       'summer': 'Лето',
       'autumn': 'Осень',
+      'standart': 'Стандарт',
+      'premium': 'Премиум',
+      'gold': 'Золотой',
       'price-description-1-span-1': 'Одна локация',
       'price-description-1-span-2': '120 цветных фото',
       'price-description-1-span-3': '12 отретушированных фото',
@@ -80,14 +90,36 @@ const i18Obj = {
       'send-message': 'Отправить'
     }
   }
-  export default i18Obj;
+ // export default i18Obj;
 
-  function getTranslate(ru) {
-    const allElementss = document.querySelectorAll('[data-i18]')
-    allElementss.forEach(function(элемент, индекс, массив) {
-        if (currentElement.placeholder) {
-            currentElement.placeholder = // Ваш код
-            currentElement.textContent = ''
-          }
-    })
-  }
+//const langChangeBtns = document.querySelector('.header__lang__change');
+const allElements = document.querySelectorAll('[data-i18]');
+//нахожу кнопки
+const btnEn = document.querySelector('.button_en');
+const btnRu = document.querySelector('.button_ru');
+//отследиваю их по клику
+//btnEn.addEventListener('click', () => 
+//getTranslate(event.target.textContent));
+btnRu.addEventListener('click', () => 
+getTranslate(event.target.textContent));
+//btnRu.addEventListener('click', getTranslate);
+//массив языков
+function langs() {
+    const lang1 = btnEn.textContent;
+    const lang2 = btnRu.textContent;
+    return [lang1,lang2];
+}
+const lang = langs();
+
+function getTranslate(lang) {
+    allElements.forEach(function(element) {
+        element.textContent = i18Obj['ru'][element.dataset.i18];
+       // if (currentElement.placeholder) {
+       //     currentElement.placeholder === 'ru';
+       //     currentElement.textContent = 'i18Obj.ru';
+      //    }
+     })
+}; 
+
+  //langChangeBtns.addEventListener('click', getTranslate(lang) );
+console.log(lang);
