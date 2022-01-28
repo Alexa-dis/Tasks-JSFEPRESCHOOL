@@ -89,37 +89,60 @@ const i18Obj = {
       'contact-me': 'Свяжитесь со мной',
       'send-message': 'Отправить'
     }
-  }
- // export default i18Obj;
+  };
+//export default i18Obj;
 
-//const langChangeBtns = document.querySelector('.header__lang__change');
-const allElements = document.querySelectorAll('[data-i18]');
+
+
 //нахожу кнопки
+//const btnEn = document.querySelector('.button_en');
+//const btnRu = document.querySelector('.button_ru');
+//отследиваю их по клику
+//btnEn.addEventListener('click', (event) => 
+//getTranslate(event.target.innerText));
+//btnRu.addEventListener('click', (event) => 
+//getTranslate(event.target.textContent));
+
+
+//const allElements = document.querySelectorAll('[data-i18]');
+//const langBtns = document.querySelectorAll('.lang__button');
+//langBtns.forEach (button => 
+//  button.addEventListener('click', (event) =>
+//  getTranslate(event.target.textContent)));
+
+//массив языков
+//function langs() {
+ //   const lang1 = langBtns[0].innerText;
+//    const lang2 = langBtns[1].innerText;
+ //   return [lang1,lang2];
+//}
+
+//const lang = langs();
+
+//function getTranslate(lang) {
+//    allElements.forEach((element) => {
+ //       element.textContent = i18Obj[lang][element.dataset.i18]
+  //       console.log(lang);
+ //    });   
+//}
+
+
+const allElements = document.querySelectorAll('[data-i18]');
 const btnEn = document.querySelector('.button_en');
 const btnRu = document.querySelector('.button_ru');
-//отследиваю их по клику
-//btnEn.addEventListener('click', () => 
-//getTranslate(event.target.textContent));
-btnRu.addEventListener('click', () => 
-getTranslate(event.target.textContent));
-//btnRu.addEventListener('click', getTranslate);
-//массив языков
-function langs() {
-    const lang1 = btnEn.textContent;
-    const lang2 = btnRu.textContent;
-    return [lang1,lang2];
+
+btnRu.addEventListener('click', getTranslateRu);
+
+function getTranslateRu(ru) {
+    allElements.forEach ((element) => {
+        element.textContent = i18Obj ['ru'][element.dataset.i18]
+    });
 }
-const lang = langs();
 
-function getTranslate(lang) {
-    allElements.forEach(function(element) {
-        element.textContent = i18Obj['ru'][element.dataset.i18];
-       // if (currentElement.placeholder) {
-       //     currentElement.placeholder === 'ru';
-       //     currentElement.textContent = 'i18Obj.ru';
-      //    }
-     })
-}; 
+btnEn.addEventListener('click', getTranslateEn);
 
-  //langChangeBtns.addEventListener('click', getTranslate(lang) );
-console.log(lang);
+function getTranslateEn(en) {
+    allElements.forEach ((element) => {
+        element.textContent = i18Obj ['en'][element.dataset.i18]
+    });
+}
