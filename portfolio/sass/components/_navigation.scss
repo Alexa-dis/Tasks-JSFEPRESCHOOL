@@ -29,6 +29,8 @@
   }
 }
 
+.header__navigation{
+}
 .header__navigation.open .navigation1{
   @include media-tablet {
   position: fixed;
@@ -51,7 +53,7 @@
 .navigation__link {
   list-style: none;
   cursor: pointer;
-  padding-right: 31px;
+  padding-right: 15px;
   position: relative;
   @include media-tablet {
     padding-bottom: 38.5px;

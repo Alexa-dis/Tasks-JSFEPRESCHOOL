@@ -1,7 +1,6 @@
 .lang__button {
     background-color: transparent;
     border-style: none;
-    color: $color-text;
     @include font(2rem );
     text-align: center;
     cursor: pointer;
@@ -17,8 +16,10 @@
 .button__slash{
     @include font(2rem );
 }
-
-.button_en {
+.common {
+    color: $color-text;
+}
+.active {
     color: $color-primary; 
 }
 

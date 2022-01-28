@@ -105,7 +105,7 @@ const i18Obj = {
 
 
 //const allElements = document.querySelectorAll('[data-i18]');
-//const langBtns = document.querySelectorAll('.lang__button');
+
 //langBtns.forEach (button => 
 //  button.addEventListener('click', (event) =>
 //  getTranslate(event.target.textContent)));
@@ -126,7 +126,8 @@ const i18Obj = {
  //    });   
 //}
 
-
+const langBtns = document.querySelectorAll('.lang__button');
+const langBtn = document.querySelector('.lang__button');
 const allElements = document.querySelectorAll('[data-i18]');
 const btnEn = document.querySelector('.button_en');
 const btnRu = document.querySelector('.button_ru');
@@ -137,6 +138,8 @@ function getTranslateRu(ru) {
     allElements.forEach ((element) => {
         element.textContent = i18Obj ['ru'][element.dataset.i18]
     });
+    removeActiveBtn();
+    selectActiveBtn(ru);
 }
 
 btnEn.addEventListener('click', getTranslateEn);
@@ -145,4 +148,19 @@ function getTranslateEn(en) {
     allElements.forEach ((element) => {
         element.textContent = i18Obj ['en'][element.dataset.i18]
     });
+    removeActiveBtn();
+    selectActiveBtn(en);
 }
+
+//удаление активного тега 
+const removeActiveBtn = () => {
+    langBtns.forEach(langBtn => {
+        langBtn.classList.remove('active');
+        langBtn.classList.add('common');
+    })
+   };
+//добавление по событию
+  const selectActiveBtn = (event) => {
+    event.target.classList.add('active');
+    event.target.classList.remove('common');
+  };

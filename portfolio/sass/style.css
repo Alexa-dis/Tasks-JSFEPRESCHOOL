@@ -144,7 +144,6 @@ h5 {
 .lang__button {
   background-color: transparent;
   border-style: none;
-  color: #FFFFFF;
   font-size: 2rem;
   font-style: normal;
   font-weight: bold;
@@ -165,7 +164,11 @@ h5 {
   line-height: 4rem;
 }
 
-.button_en {
+.common {
+  color: #FFFFFF;
+}
+
+.active {
   color: #BDAE82;
 }
 
@@ -1327,7 +1330,7 @@ section, main, footer, header, article {
 .navigation__link {
   list-style: none;
   cursor: pointer;
-  padding-right: 31px;
+  padding-right: 15px;
   position: relative;
 }
 @media (max-width: 768px) {
