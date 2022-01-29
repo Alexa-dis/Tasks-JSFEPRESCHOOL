@@ -67,6 +67,7 @@
     &:hover {
       color: $color-text;
       @extend %transition;
+
     }
   }
   &_colored {

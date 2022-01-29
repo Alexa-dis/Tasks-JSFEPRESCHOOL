@@ -228,12 +228,14 @@ h5 {
   background-color: transparent;
   border: 2px solid #BDAE82;
   color: #BDAE82;
+  -webkit-color: #BDAE82;
 }
 .button_bordered:hover {
   color: #FFFFFF;
 }
 .button_colored {
   background-color: #BDAE82;
+  -webkit-background-color: #BDAE82;
   border: 2px solid #BDAE82;
 }
 .button_colored:hover {
@@ -1065,7 +1067,7 @@ section, main, footer, header, article {
 }
 @media (max-width: 768px) {
   .contact {
-    background-image: url(/assets/img/contacts_tablet.jpg);
+    background-image: url(../assets/img/contacts_tablet.jpg);
     max-width: 768px;
     height: 600px;
     margin: -68px auto 0;
