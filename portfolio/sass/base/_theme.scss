@@ -1,0 +1,60 @@
+.light {
+
+    body {
+        background-color: $color-text;
+        color: $color-background;
+    }
+
+    .title__style {
+        color: $color-background;
+    }
+
+    h1, .button__slash, .hero__description{
+        color:  $color-text;
+    }
+    .button {
+        &_bordered {
+            background-color: $color-text;
+            color: $color-background;
+            &:hover {
+                background-color: $color-primary;
+                color:  $color-text;
+            }
+        }
+        &_colored {
+            color: $color-background;
+            &:hover {
+                color:  $color-text; 
+            }
+        }
+    } 
+
+    .navigation {
+        @include media-tablet {
+            background-color: $color-text;
+            a {
+            color: $color-background;
+            }
+        } 
+    }
+
+    .hamburger.open .line1, .hamburger.open .line3 {
+        background: $color-background;
+    }
+
+    .theme__button {
+        background-image: url("../assets/svg/moon.svg");
+    }
+
+    .title__line {
+        background-color: $color-background;
+    }
+
+    .footer__wrapper {
+        background-color: $color-background;
+    }
+
+    ::-webkit-scrollbar {
+        background-color: $color-background;
+    }
+}
