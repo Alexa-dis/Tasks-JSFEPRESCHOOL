@@ -24,13 +24,13 @@
 }
 
 .theme__button__wrapper {
-    padding: 10px 0 0 20px;
-    @include media-tablet {
+  padding: 10px 0 0 20px;
+  @include media-tablet {
     padding: 10px 15px 0 0;
-   }
-   @include media-mobile-small {
+  }
+  @include media-mobile-small {
     padding: 10px 10px 0 0;
-   }
+  }
 }
 
 .theme__button {
@@ -47,7 +47,6 @@
     @extend %color_filter;
     @extend %transition;
   }
-  
 }
 
 .button {

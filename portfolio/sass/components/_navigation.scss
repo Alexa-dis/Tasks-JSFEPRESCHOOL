@@ -29,8 +29,6 @@
   }
 }
 
-.header__navigation{
-}
 .header__navigation.open .navigation1{
   @include media-tablet {
   position: fixed;
