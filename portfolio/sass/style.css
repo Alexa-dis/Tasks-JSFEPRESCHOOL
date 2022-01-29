@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather+Sans:wght@400;700&family=Merriweather:wght@400;700&display=swap");
-a:hover, a, .navigation, .button__play:hover, .button__play, .pint:hover, .pint, .tw:hover, .tw, .fb:hover, .fb, .inst:hover, .inst, .mask, .hamburger__lines:hover, .hamburger__lines, .button_colored:hover, .button_colored, .button_bordered:hover, .button_bordered, .lang__button:hover, .lang__button, .shadow.open .mainshadow1, .mainshadow {
+a:hover, a, .navigation, .button__play:hover, .button__play, .pint:hover, .pint, .tw:hover, .tw, .fb:hover, .fb, .inst:hover, .inst, .mask, .hamburger__lines:hover, .hamburger__lines, .button_colored:hover, .button_colored, .button_bordered:hover, .button_bordered, .theme__button:hover, .theme__button, .lang__button:hover, .lang__button, .shadow.open .mainshadow1, .mainshadow {
   transition: all 0.3s ease-out;
 }
 
@@ -11,7 +11,7 @@ h5, h3, h2, h1 {
   font-family: Inter;
 }
 
-.button__play:hover, .pint:hover, .tw:hover, .fb:hover, .inst:hover, .hamburger__lines:hover {
+.button__play:hover, .pint:hover, .tw:hover, .fb:hover, .inst:hover, .hamburger__lines:hover, .theme__button:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
@@ -172,6 +172,29 @@ h5 {
   color: #BDAE82;
 }
 
+.theme__button__wrapper {
+  padding: 10px 0 0 20px;
+}
+@media (max-width: 768px) {
+  .theme__button__wrapper {
+    padding: 10px 15px 0 0;
+  }
+}
+@media (max-width: 320px) {
+  .theme__button__wrapper {
+    padding: 10px 10px 0 0;
+  }
+}
+
+.theme__button {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/svg/sun.svg");
+  cursor: pointer;
+}
 .button {
   padding: 6px 0 8px 0;
   font-size: 2rem;
@@ -696,6 +719,35 @@ section, main, footer, header, article {
   width: 32px;
   height: 32px;
 }
+.light body {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+.light .title__style {
+  color: #000000;
+}
+.light h1, .light .button__slash, .light .hero__description {
+  color: #FFFFFF;
+}
+.light .button_bordered {
+  color: #000000;
+}
+.light .button_bordered:hover {
+  color: #BDAE82;
+}
+.light .button_colored {
+  color: #000000;
+}
+.light .button_colored:hover {
+  color: #FFFFFF;
+}
+.light .theme__button {
+  background-image: url("../assets/svg/moon.svg");
+}
+.light .title__line {
+  background-color: #000000;
+}
+
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;

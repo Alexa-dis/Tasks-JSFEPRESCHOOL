@@ -1,65 +1,92 @@
 .lang__button {
-    background-color: transparent;
-    border-style: none;
-    @include font(2rem );
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    padding: 0;
+  background-color: transparent;
+  border-style: none;
+  @include font(2rem);
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  @extend %transition;
+  &:hover {
+    color: $color-primary;
     @extend %transition;
-    &:hover {
-        color: $color-primary;
-        @extend %transition;
-    }
+  }
 }
 
-.button__slash{
-    @include font(2rem );
+.button__slash {
+  @include font(2rem);
 }
 .common {
-    color: $color-text;
+  color: $color-text;
 }
 .active {
-    color: $color-primary; 
+  color: $color-primary;
+}
+
+.theme__button__wrapper {
+    padding: 10px 0 0 20px;
+    @include media-tablet {
+    padding: 10px 15px 0 0;
+   }
+   @include media-mobile-small {
+    padding: 10px 10px 0 0;
+   }
+}
+
+.theme__button {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/svg/sun.svg");
+  @extend %transition;
+  cursor: pointer;
+
+  &:hover{
+    @extend %color_filter;
+    @extend %transition;
+  }
+  
 }
 
 .button {
-    padding: 6px 0 8px 0;
-    @extend %font-prim;
-    @include font(2rem, $weight: normal );
-    text-align: center;
-    width: 220px;
-    height: 55px;
-    cursor: pointer;
-    &_bordered {
-        background-color: transparent;
-        border: 2px solid $color-primary;
-        color: $color-primary;
-        @extend %transition;
-        &:hover {
-            color: $color-text;
-            @extend %transition;
-        }
+  padding: 6px 0 8px 0;
+  @extend %font-prim;
+  @include font(2rem, $weight: normal);
+  text-align: center;
+  width: 220px;
+  height: 55px;
+  cursor: pointer;
+  &_bordered {
+    background-color: transparent;
+    border: 2px solid $color-primary;
+    color: $color-primary;
+    @extend %transition;
+    &:hover {
+      color: $color-text;
+      @extend %transition;
     }
-    &_colored{
-        background-color: $color-primary;
-        border: 2px solid $color-primary;
-        @extend %transition;
-        &:hover {
-            color: $color-text;
-            @extend %transition;
-        }
+  }
+  &_colored {
+    background-color: $color-primary;
+    border: 2px solid $color-primary; 
+    @extend %transition;
+    &:hover {
+      color: $color-text;
+      @extend %transition;
     }
-    @include media-content {
-        margin-bottom: 5px;
-    }
-    @include media-tablet {
-        margin-bottom: 5px;
-    }
-    @include media-mobile-big {
-        width: 160px;
-        height: 50px;
-        line-height: 25px;
-        @include font(1.6rem, $weight: normal );
-    }
+  }
+  @include media-content {
+    margin-bottom: 5px;
+  }
+  @include media-tablet {
+    margin-bottom: 5px;
+  }
+  @include media-mobile-big {
+    width: 160px;
+    height: 50px;
+    line-height: 25px;
+    @include font(1.6rem, $weight: normal);
+  }
 }

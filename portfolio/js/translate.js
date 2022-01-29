@@ -152,14 +152,14 @@ function getTranslateEn(en) {
     selectActiveBtn(en);
 }
 
-//удаление активного тега 
+//удаление активного тега у всех кнопок
 const removeActiveBtn = () => {
     langBtns.forEach(langBtn => {
         langBtn.classList.remove('active');
         langBtn.classList.add('common');
     })
    };
-//добавление по событию
+//добавление тега по событию
   const selectActiveBtn = (event) => {
     event.target.classList.add('active');
     event.target.classList.remove('common');
