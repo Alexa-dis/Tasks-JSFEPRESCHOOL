@@ -782,6 +782,9 @@ section, main, footer, header, article {
 .light .title__line {
   background-color: #000000;
 }
+.light .footer__wrapper {
+  background-color: #000000;
+}
 
 .wrapper {
   max-width: 1400px;
@@ -1259,10 +1262,11 @@ section, main, footer, header, article {
 
 .footer__wrapper {
   display: flex;
-  max-width: 1400px;
+  max-width: 1440px;
+  margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0 0 0;
+  padding: 40px 20px;
 }
 @media (max-width: 768px) {
   .footer__wrapper {
