@@ -83,3 +83,19 @@ h5 {
   display: block;
   @extend %transition;
 }
+
+//стилизация скрола
+::-webkit-scrollbar {
+  width: 10px; /* ширина для вертикального скролла */
+  background-color: $color-text;
+  @include media-tablet {
+    width: 7px;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color-primary;
+  
+}
+
+

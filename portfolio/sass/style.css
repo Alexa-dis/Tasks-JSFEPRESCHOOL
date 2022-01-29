@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather+Sans:wght@400;700&family=Merriweather:wght@400;700&display=swap");
 a:hover, a, .navigation, .button__play:hover, .button__play, .pint:hover, .pint, .tw:hover, .tw, .fb:hover, .fb, .inst:hover, .inst, .mask, .hamburger__lines:hover, .hamburger__lines, .button_colored:hover, .button_colored, .button_bordered:hover, .button_bordered, .theme__button:hover, .theme__button, .lang__button:hover, .lang__button, .shadow.open .mainshadow1, .mainshadow {
   transition: all 0.3s ease-out;
@@ -139,6 +140,21 @@ h5 {
 
 .shadow.open .mainshadow1 {
   display: block;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  /* ширина для вертикального скролла */
+  background-color: #FFFFFF;
+}
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #BDAE82;
 }
 
 .lang__button {
@@ -783,6 +799,9 @@ section, main, footer, header, article {
   background-color: #000000;
 }
 .light .footer__wrapper {
+  background-color: #000000;
+}
+.light ::-webkit-scrollbar {
   background-color: #000000;
 }
 

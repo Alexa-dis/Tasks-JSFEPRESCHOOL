@@ -39,4 +39,8 @@
     .footer__wrapper {
         background-color: $color-background;
     }
+
+    ::-webkit-scrollbar {
+        background-color: $color-background;
+      }
 }
