@@ -13,9 +13,11 @@
     }
     .button {
         &_bordered {
+            background-color: $color-text;
             color: $color-background;
             &:hover {
-                color:  $color-primary;
+                background-color: $color-primary;
+                color:  $color-text;
             }
         }
         &_colored {

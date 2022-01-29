@@ -730,10 +730,12 @@ section, main, footer, header, article {
   color: #FFFFFF;
 }
 .light .button_bordered {
+  background-color: #FFFFFF;
   color: #000000;
 }
 .light .button_bordered:hover {
-  color: #BDAE82;
+  background-color: #BDAE82;
+  color: #FFFFFF;
 }
 .light .button_colored {
   color: #000000;
