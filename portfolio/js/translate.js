@@ -92,40 +92,6 @@ const i18Obj = {
   };
 //export default i18Obj;
 
-
-
-//нахожу кнопки
-//const btnEn = document.querySelector('.button_en');
-//const btnRu = document.querySelector('.button_ru');
-//отследиваю их по клику
-//btnEn.addEventListener('click', (event) => 
-//getTranslate(event.target.innerText));
-//btnRu.addEventListener('click', (event) => 
-//getTranslate(event.target.textContent));
-
-
-//const allElements = document.querySelectorAll('[data-i18]');
-
-//langBtns.forEach (button => 
-//  button.addEventListener('click', (event) =>
-//  getTranslate(event.target.textContent)));
-
-//массив языков
-//function langs() {
- //   const lang1 = langBtns[0].innerText;
-//    const lang2 = langBtns[1].innerText;
- //   return [lang1,lang2];
-//}
-
-//const lang = langs();
-
-//function getTranslate(lang) {
-//    allElements.forEach((element) => {
- //       element.textContent = i18Obj[lang][element.dataset.i18]
-  //       console.log(lang);
- //    });   
-//}
-
 const langBtns = document.querySelectorAll('.lang__button');
 const langBtn = document.querySelector('.lang__button');
 const allElements = document.querySelectorAll('[data-i18]');
