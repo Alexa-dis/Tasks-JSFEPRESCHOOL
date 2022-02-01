@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+header, main, footer {
+    display: block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 151px);
+  min-height: 280px;
+  background-image: url(./assets/img/forest.jpg);
+  background-size: cover;
+}
+.header {
+  width: 100%;
+  background-color: cadetblue;
+  margin: 0 auto;
+  display: block;
+}
+.footer {
+  display: block;
+  width: 100%;
+  background-color: cadetblue;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: calc(100% - 60px);
+  padding: 10px 0;
+}
+
+/* Header */
+
+.logo__wrapper,
+.logo {
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header__navigation {
+}
+
+.header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.header__item {
+  color: white;
+  list-style-type: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding-left: 40px;
+}
+
+/* Footer */
+
+.github {
+  font-size: 20px;
+  color: white;
+}
+
+.rss_icon {
+  height: 50px;
+}
