@@ -26,14 +26,14 @@ a {
 }
 .header {
   width: 100%;
-  background-color: cadetblue;
+  background-color: black;
   margin: 0 auto;
   display: block;
 }
 .footer {
   display: block;
   width: 100%;
-  background-color: cadetblue;
+  background-color: black;
   margin: 0 auto;
 }
 
@@ -56,6 +56,11 @@ a {
   transition: 0.3s;
   cursor: pointer;
 }
+.logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    transition: 0.3s;
+}
 
 .header__navigation {
 }
@@ -74,15 +79,56 @@ a {
   font-size: 20px;
   cursor: pointer;
   padding-left: 40px;
+  transition: 0.3s;
 }
+.header__item:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    transition: 0.3s;
+}
+
+
+
+/* main */
+
+.play_btn {
+    background-image: url(./assets/svg/play.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    transition: 0.3s;
+}
+.play_btn:hover {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    transition: 0.3s;
+}
+
+
 
 /* Footer */
 
 .github {
   font-size: 20px;
   color: white;
+  transition: 0.3s;
+}
+.github:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    transition: 0.3s;
 }
 
 .rss_icon {
   height: 50px;
+  transition: 0.3s;
 }
+.rss_icon:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    transition: 0.3s;
+}
+
