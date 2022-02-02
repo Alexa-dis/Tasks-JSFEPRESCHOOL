@@ -21,7 +21,6 @@ a {
   align-items: center;
   height: calc(100vh - 151px);
   min-height: 280px;
-  background-image: url(./assets/img/forest.jpg);
   background-size: cover;
 }
 .header {
@@ -88,21 +87,21 @@ a {
 
 
 /* main */
-
-.play_btn {
-    background-image: url(./assets/svg/play.svg);
-    background-color: transparent;
+.btn {
+  background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
     cursor: pointer;
-    height: 100px;
-    width: 100px;
     transition: 0.3s;
 }
-.play_btn:hover {
+.btn:hover {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
     transition: 0.3s;
+}
+.btn_src {
+  height: 100px;
+  width: 100px;
 }
 
 
