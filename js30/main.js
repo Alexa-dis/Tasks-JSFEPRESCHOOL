@@ -10,7 +10,6 @@ const javoronok = document.querySelector('.javoronok');
 const slavka = document.querySelector('.slavka');
 
 const audio = document.querySelector('.audio');
-const songs = ['forest', 'drozd', 'javoronok', 'slavka', 'solovey', 'zarynka']
 
 
 function playAudio() {
@@ -41,9 +40,11 @@ function soloveyAudio() {
     audio.src = './assets/audio/solovey.mp3'
     document.getElementById("change").style.backgroundImage = 'url(/assets/img/solovey.jpg)'
 }
-solovey.addEventListener('click', () => {
+solovey.addEventListener('click', (event) => {
     soloveyAudio();
     playAudio();
+    removeSelectedBird();
+    selectBird(event);
 })
 
 
@@ -52,9 +53,11 @@ function drozdAudio() {
     audio.src = './assets/audio/drozd.mp3'
     document.getElementById("change").style.backgroundImage = 'url(/assets/img/drozd.jpg)'
 }
-drozd.addEventListener('click', () => {
+drozd.addEventListener('click', (event) => {
     drozdAudio();
     playAudio();
+    removeSelectedBird();
+    selectBird(event);
 })
 
 
@@ -62,11 +65,12 @@ drozd.addEventListener('click', () => {
 function zarynkaAudio() {
     audio.src = './assets/audio/zarynka.mp3'
     document.getElementById("change").style.backgroundImage = 'url(/assets/img/zarynka.jpg)'
-    //playAudio()
 }
-zarynka.addEventListener('click', () => {
+zarynka.addEventListener('click', (event) => {
     zarynkaAudio();
     playAudio();
+    removeSelectedBird();
+    selectBird(event);
 })
 
 
@@ -75,9 +79,11 @@ function javoronokAudio() {
     audio.src = './assets/audio/javoronok.mp3'
     document.getElementById("change").style.backgroundImage = 'url(/assets/img/javoronok.jpg)'
 }
-javoronok.addEventListener('click', () => {
+javoronok.addEventListener('click', (event) => {
     javoronokAudio();
     playAudio();
+    removeSelectedBird();
+    selectBird(event);
 })
 
 //slavka audio
@@ -85,9 +91,21 @@ function slavkaAudio() {
     audio.src = './assets/audio/slavka.mp3'
     document.getElementById("change").style.backgroundImage = 'url(/assets/img/slavka.jpg)'
 }
-slavka.addEventListener('click', () => {
+slavka.addEventListener('click', (event) => {
     slavkaAudio();
     playAudio();
+    removeSelectedBird();
+    selectBird(event);
 })
 
 
+//Btns class change
+function removeSelectedBird() {
+    birds.forEach(header__item => {
+        header__item.classList.remove('active');
+    })
+}
+
+function selectBird(event) {
+    event.target.classList.add('active');
+}

@@ -23,12 +23,14 @@ a {
   min-height: 280px;
   background-size: cover;
 }
+
 .header {
   width: 100%;
   background-color: black;
   margin: 0 auto;
   display: block;
 }
+
 .footer {
   display: block;
   width: 100%;
@@ -69,7 +71,6 @@ a {
   list-style: none;
 }
 
-
 .header__item {
   color: white;
   list-style-type: none;
@@ -78,6 +79,11 @@ a {
   padding-left: 40px;
   transition: 0.3s;
 }
+.header__item.active {
+  filter:invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+  contrast(87%);
+}
+
 .header__item:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
