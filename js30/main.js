@@ -37,19 +37,25 @@ playBtn.addEventListener('click', () => {
 
 //solovey audio
 function soloveyAudio() {
+    //activeImg.classList.add('play')
     audio.src = './assets/audio/solovey.mp3'
     document.getElementById("change").style.backgroundImage = 'url(/assets/img/solovey.jpg)'
 }
-solovey.addEventListener('click', soloveyAudio)
+solovey.addEventListener('click', () => {
+    soloveyAudio();
+    playAudio();
+})
 
 
 //drozd audio 
 function drozdAudio() {
     audio.src = './assets/audio/drozd.mp3'
     document.getElementById("change").style.backgroundImage = 'url(/assets/img/drozd.jpg)'
-    //playAudio()
 }
-drozd.addEventListener('click', drozdAudio)
+drozd.addEventListener('click', () => {
+    drozdAudio();
+    playAudio();
+})
 
 
 //zarynka audio
@@ -58,23 +64,30 @@ function zarynkaAudio() {
     document.getElementById("change").style.backgroundImage = 'url(/assets/img/zarynka.jpg)'
     //playAudio()
 }
-zarynka.addEventListener('click', zarynkaAudio)
+zarynka.addEventListener('click', () => {
+    zarynkaAudio();
+    playAudio();
+})
 
 
 //javoronok audio
 function javoronokAudio() {
     audio.src = './assets/audio/javoronok.mp3'
     document.getElementById("change").style.backgroundImage = 'url(/assets/img/javoronok.jpg)'
-    //playAudio()
 }
-javoronok.addEventListener('click', javoronokAudio)
+javoronok.addEventListener('click', () => {
+    javoronokAudio();
+    playAudio();
+})
 
 //slavka audio
 function slavkaAudio() {
     audio.src = './assets/audio/slavka.mp3'
     document.getElementById("change").style.backgroundImage = 'url(/assets/img/slavka.jpg)'
-    //playAudio()
 }
-slavka.addEventListener('click', slavkaAudio)
+slavka.addEventListener('click', () => {
+    slavkaAudio();
+    playAudio();
+})
 
 
