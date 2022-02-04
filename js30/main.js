@@ -38,7 +38,7 @@ playBtn.addEventListener('click', () => {
 function soloveyAudio() {
     //activeImg.classList.add('play')
     audio.src = './assets/audio/solovey.mp3'
-    document.getElementById("change").style.backgroundImage = 'url(/assets/img/solovey.jpg)'
+    document.getElementById("change").style.backgroundImage = 'url(./assets/img/solovey.jpg)'
 }
 solovey.addEventListener('click', (event) => {
     soloveyAudio();
@@ -51,7 +51,7 @@ solovey.addEventListener('click', (event) => {
 //drozd audio 
 function drozdAudio() {
     audio.src = './assets/audio/drozd.mp3'
-    document.getElementById("change").style.backgroundImage = 'url(/assets/img/drozd.jpg)'
+    document.getElementById("change").style.backgroundImage = 'url(./assets/img/drozd.jpg)'
 }
 drozd.addEventListener('click', (event) => {
     drozdAudio();
@@ -64,7 +64,7 @@ drozd.addEventListener('click', (event) => {
 //zarynka audio
 function zarynkaAudio() {
     audio.src = './assets/audio/zarynka.mp3'
-    document.getElementById("change").style.backgroundImage = 'url(/assets/img/zarynka.jpg)'
+    document.getElementById("change").style.backgroundImage = 'url(./assets/img/zarynka.jpg)'
 }
 zarynka.addEventListener('click', (event) => {
     zarynkaAudio();
@@ -77,7 +77,7 @@ zarynka.addEventListener('click', (event) => {
 //javoronok audio
 function javoronokAudio() {
     audio.src = './assets/audio/javoronok.mp3'
-    document.getElementById("change").style.backgroundImage = 'url(/assets/img/javoronok.jpg)'
+    document.getElementById("change").style.backgroundImage = 'url(./assets/img/javoronok.jpg)'
 }
 javoronok.addEventListener('click', (event) => {
     javoronokAudio();
@@ -89,7 +89,7 @@ javoronok.addEventListener('click', (event) => {
 //slavka audio
 function slavkaAudio() {
     audio.src = './assets/audio/slavka.mp3'
-    document.getElementById("change").style.backgroundImage = 'url(/assets/img/slavka.jpg)'
+    document.getElementById("change").style.backgroundImage = 'url(./assets/img/slavka.jpg)'
 }
 slavka.addEventListener('click', (event) => {
     slavkaAudio();
