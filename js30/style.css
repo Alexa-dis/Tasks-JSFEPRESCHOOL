@@ -93,6 +93,10 @@ a {
 
 
 /* main */
+body {
+  background-color: black;
+}
+
 .btn {
   background-color: transparent;
     background-repeat: no-repeat;
