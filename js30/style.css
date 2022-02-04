@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+header, main, footer {
+    display: block;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 151px);
+  min-height: 280px;
+  background-size: cover;
+}
+
+.header {
+  width: 100%;
+  background-color: black;
+  margin: 0 auto;
+  display: block;
+}
+
+.footer {
+  display: block;
+  width: 100%;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: calc(100% - 60px);
+  padding: 10px 0;
+}
+
+/* Header */
+
+.logo__wrapper,
+.logo {
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    transition: 0.3s;
+}
+
+.header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.header__item {
+  color: white;
+  list-style-type: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding-left: 40px;
+  transition: 0.3s;
+}
+.header__item.active {
+  filter:invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+  contrast(87%);
+}
+
+.header__item:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    transition: 0.3s;
+}
+
+
+
+/* main */
+.btn {
+  background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    transition: 0.3s;
+}
+.btn_src {
+  height: 100px;
+  width: 100px;
+}
+
+
+
+/* Footer */
+
+.github {
+  font-size: 20px;
+  color: white;
+  transition: 0.3s;
+}
+.github:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    transition: 0.3s;
+}
+
+.rss_icon {
+  height: 50px;
+  transition: 0.3s;
+}
+.rss_icon:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .header__list{
+        flex-wrap:wrap;
+        justify-content: space-around;  
+    }
+    .header__item{
+        padding: 10px 30px;
+        font-size: 24px;
+    }
+    .github{
+        font-size: 24px;
+    }
+}
+
