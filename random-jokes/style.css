@@ -26,6 +26,9 @@ footer {
   box-shadow: 0 2px 40px rgba(0, 0, 0, 0.2);
   background-color: whitesmoke;
   margin: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .wrapper {
