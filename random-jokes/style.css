@@ -25,7 +25,6 @@ a:hover {
 footer {
   box-shadow: 0 2px 40px rgba(0, 0, 0, 0.2);
   background-color: whitesmoke;
-  margin: 0;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -51,12 +50,12 @@ footer {
 }
 
 .joke_img {
-  background-image: url(./unicorn.svg.png);
+  background: url(./unicorn.svg.png) center center no-repeat;
   height: 250px;
   width: 250px;
   background-size: cover;
-  background-repeat: no-repeat;
   margin-top: 30px;
+  animation: test  2s forwards ease-in-out;
 }
 
 .joke__btn {
@@ -107,3 +106,14 @@ footer {
   opacity: 0.5;
   transition: 0.3s;
 }
+
+@keyframes test {
+  from {
+  margin:0;
+  width: 150px;
+  height: 150px;}
+  to {
+    margin:0;
+    width: 250px;
+    height: 250px;}
+  }
