@@ -44,3 +44,70 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
+.result__form__wpapper{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 50, 0.3);
+}
+
+.result__window {
+    width: 350px;
+    height: 250px;
+    background-color:whitesmoke;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    justify-content: space-between;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.content {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.btn-close {
+    width: 200px;
+    height: 60px;
+    border-radius: 25px;
+    background-color: #ffc5ca;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#my-canvas {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    z-index: 1;
+}
+
+#my-canvas.active {
+    visibility: visible ;
+}
