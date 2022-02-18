@@ -1,6 +1,7 @@
 const area = document.querySelector('.area');
 const boxes = document.querySelectorAll('.box');
 const content = document.querySelector('.content');
+const moves = document.querySelector('.moves');
 const resultForm = document.querySelector('.result__form__wpapper');
 const overlay = document.querySelector('.overlay');
 const btnClose = document.querySelector('.btn-close');
